@@ -1,0 +1,45 @@
+
+# Before we analyze anything, we need to import pandas
+
+import pandas as pd
+
+We can load data into Pandas from a csv (comma-separated variable) file.
+
+ex: df = pd.read_csv('shoefly_orders.csv')
+
+pd.DataFrame
+
+
+
+Create a DataFrame I
+A DataFrame is an object that stores data as rows and columns. You can think of a DataFrame as a spreadsheet or as a SQL table. You can manually create a DataFrame or fill it with data from a CSV, an Excel spreadsheet, or a SQL query.
+
+DataFrames have rows and columns. Each column has a name, which is a string. Each row has an index, which is an integer. DataFrames can contain many different data types: strings, ints, floats, tuples, etc.
+
+You can pass in a dictionary to pd.DataFrame(). Each key is a column name and each value is a list of column values. The columns must all be the same length or you will get an error.
+
+the columns will appear in alphabetical order because dictionaries don’t have any inherent order for columns.
+
+
+Create a DataFrame II
+You can also add data using lists.
+
+For example, you can pass in a list of lists, where each one represents a row of data. Use the keyword argument columns to pass a list of column names.
+
+ex
+
+df2 = pd.DataFrame([
+    ['John Smith', '123 Main St.', 34],
+    ['Jane Doe', '456 Maple Ave.', 28],
+    ['Joe Schmo', '789 Broadway', 51]
+    ],
+    columns=['name', 'address', 'age'])
+
+
+
+Comma Separated Variables (CSV)
+most of the time, we’ll be working with datasets that already exist. One of the most common formats for big datasets is the CSV.
+CSV (comma separated values) is a text-only spreadsheet format. You can find CSVs in lots of places:
+Online datasets (here’s an example from data.gov)
+Export from Excel or Google Sheets
+Export from SQL
