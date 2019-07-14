@@ -32,3 +32,19 @@ not a==5      ou    a!=5      c'est la même chose
 
 ## la function input
 input()
+C'est l'information qu'on donne en entrée
+
+## listes  [  ]
+
+
+## tuples   (  )
+
+
+## dictionnaires   {  }
+
+
+## sets   ([ ])
+unordered collections of unique elements
+Ils sont utilisés pour: membership testing, remouving duplicates from a sequence, and computing standard math operations on sets sucs as intersection, union, difference, and symmetric difference.
+
+
